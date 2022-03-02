@@ -12,7 +12,7 @@ while get_prize == True:
 get_number = True
 while get_number == True:
     try:
-        prize_value = input(f"How much does the {prize} cost\n")
+        prize_value = input(f"\nHow much does the {prize} cost\n")
         prize_value = int(prize_value)
         if prize_value >= 0:
             get_number = False
@@ -25,7 +25,7 @@ name_list = []
 while get_list == True:
     get_name = True
     while get_name == True:
-        name = input("please enter name for rafle\n")
+        name = input("\nplease enter name for rafle\n")
         if name.isalpha():
             get_name = False
         else:
@@ -35,7 +35,7 @@ while get_list == True:
     else:
         name_list.append(name)
 length = len(name_list)
-print(f"There are {length} people in the draw for a {prize} valued at {prize_value}.")
+print(f"\nThere are {length} people in the draw for a {prize} valued at {prize_value}.\n")
 import random
 winner_number = random.randint(0, length)
 winner = name_list[winner_number - 1]
