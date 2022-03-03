@@ -23,6 +23,10 @@ while get_number == True:
 name_list = []
 #make list of names and error catching
 while get_list == True:
+    print("Names in raffle")
+    print("=" * 35)
+    length = len(name_list)
+
     get_name = True
     while get_name == True:
         name = input("\nplease enter name for rafle\n")
